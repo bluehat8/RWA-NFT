@@ -17,7 +17,7 @@ const GroupComponent: NextPage = () => {
             <div className={styles.wallet}>WALLET</div>
           </div>
           <div className={styles.home}>Home</div>
-          <div className={styles.aboutUs}>About</div>
+          <div className={styles.aboutUs}>About us 444</div>
           <div className={styles.contactUs}>Contact us</div>
         </div>
       </div>
