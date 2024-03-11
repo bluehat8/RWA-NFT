@@ -4,7 +4,9 @@
 body {
   margin: 0;
   line-height: normal;
+  font-family: var(--font-poppins);
 }
+
 :root {
   /* fonts */
   --font-poppins: Poppins;

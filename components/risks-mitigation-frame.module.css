@@ -76,6 +76,7 @@
 }
 .subtractaiFrame {
   align-self: stretch;
+  margin-top: 5rem;
   gap: 32px 0;
 }
 .realworldAssetsFrame {
@@ -97,6 +98,7 @@
 .bimouseContainer {
   height: 611px;
   width: 780px;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -134,9 +136,10 @@
   gap: 0 176px;
 }
 .risksMitigationFrame {
+  /* margin-top: 4.5rem; */
   align-self: stretch;
   justify-content: center;
-  padding: 0 var(--padding-xl);
+  padding: 0px 100px 0px 100px;
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-11xl);

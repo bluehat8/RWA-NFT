@@ -1,18 +1,23 @@
 import type { NextPage } from "next";
-import GroupComponent from "../components/group-component";
-import RisksMitigationFrame from "../components/risks-mitigation-frame";
+import Header from "../components/header";
+import RisksMitigationFrame from "../components/banner";
 import FooterFrame from "../components/footer-frame";
 import BuildSystematizeRectangles from "../components/build-systematize-rectangles";
 import SocialMediaLinks from "../components/social-media-links";
 import styles from "./index.module.css";
+import Footer from "../components/footer";
+
 
 const RWAdrops: NextPage = () => {
   return (
+    <>
+    <Header />
+
     <div className={styles.rwadrops}>
+
       <section className={styles.headerFrame}>
         <div className={styles.logoFrame}>
           <div className={styles.logoFrameChild} />
-          <GroupComponent />
           <RisksMitigationFrame />
         </div>
       </section>
@@ -55,7 +60,9 @@ const RWAdrops: NextPage = () => {
         </div>
       </section>
       <SocialMediaLinks />
+      <Footer/>
     </div>
+    </>
   );
 };
 

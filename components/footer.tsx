@@ -1,47 +1,11 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
+import { Container, Row, Col } from "react-bootstrap";
 import EmailAddress from "./email-address";
 import styles from "./social-media-links.module.css";
 
-const SocialMediaLinks: NextPage = () => {
+const Footer: NextPage = () => {
   return (
-    <section className={styles.socialMediaLinks}>
-      <div className={styles.socialMediaLinksChild} />
-      <div className={styles.helpCenterFrame}>
-        <img
-          className={styles.helpCenterFrameChild}
-          loading="lazy"
-          alt=""
-          src="/group-81.svg"
-        />
-        <div className={styles.contactUsFrame}>
-          <div className={styles.submitButton}>
-            <div className={styles.riskMitigation}>
-              <h1 className={styles.contactUs}>Contact us</h1>
-              <div className={styles.useTheForm}>
-                Use the form below to contact us. Please be as detailed and
-                precise as possible.
-              </div>
-            </div>
-            <EmailAddress name1="Name " enterYourName="Enter your name" />
-            <div className={styles.footerBase}>
-              <EmailAddress
-                name1="Email address "
-                enterYourName="Enter your email address"
-                propHeight="unset"
-              />
-              <EmailAddress
-                name1="Message "
-                enterYourName="Your message here"
-                propHeight="127px"
-              />
-            </div>
-            <div className={styles.vectorXInstagram}>
-              <b className={styles.submit}>Submit</b>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <footer className={styles.footer}>
+    <footer className={styles.footer}>
         <div className={styles.footerChild} />
         <div className={styles.socialMediaFrame}>
           <b className={styles.socialMedia}>Social Media</b>
@@ -86,9 +50,8 @@ const SocialMediaLinks: NextPage = () => {
             <div className={styles.aboutUs}>About us</div>
           </div>
         </div>
-      </footer> */}
-    </section>
+      </footer>
   );
 };
 
-export default SocialMediaLinks;
+export default Footer;

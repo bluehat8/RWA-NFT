@@ -1,3 +1,15 @@
+
+.walletLink {
+  background: linear-gradient(to right, #FFD700, #FFA500) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.poppinsFont{
+  font-family: 'Poppins', sans-serif !important;
+}
+
 .fRAMEHome {
   height: 100%;
   width: 100%;
@@ -15,8 +27,8 @@
   z-index: 1;
 }
 .logo1Icon {
-  height: 68.2px;
-  width: 177.8px;
+  height: 60px;
+  width: 65px;
   object-fit: cover;
 }
 .wallet {
