@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RisksMitigationFrame: NextPage = () => {
   return (
-    <div className="container" style={{ minHeight: "100vmin" }}>
+    <div className="container" style={{ minHeight: "80vmin" }}>
       <div className="row" style={{ marginTop: "30vmin" }}>
         <div className="col-md-6 order-md-2 mb-4 mb-md-0">
           <div className="row">
