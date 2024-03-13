@@ -22,19 +22,13 @@ const SocialMediaLinks: NextPage = () => {
                 precise as possible.
               </div>
             </div>
-            <EmailAddress name1="Name " enterYourName="Enter your name" />
-            <div className={styles.footerBase}>
-              <EmailAddress
-                name1="Email address "
-                enterYourName="Enter your email address"
-                propHeight="unset"
-              />
-              <EmailAddress
-                name1="Message "
-                enterYourName="Your message here"
-                propHeight="127px"
-              />
-            </div>
+            <label className="name">Name</label>
+            <textarea placeholder="Yout Name" type="text" id="name" name="name" className={styles.input}/>
+            <label className="Email">Email address</label>
+            <textarea placeholder="Email" type="email" id="email" name="email" className={styles.input}/>
+            <label className="Message">Message</label>
+            <textarea placeholder="Your Message" id="Message" name="Message" className={`${styles.input} ${styles.textarea}`} />
+            <button className={styles.button}>Submit</button>
             <div className={styles.vectorXInstagram}>
               <b className={styles.submit}>Submit</b>
             </div>
