@@ -31,7 +31,7 @@ const FooterFrame: NextPage = () => {
         </div>
         <div className={styles.rWAAwarenessFrame}>
           <div className={styles.realWorldAssetsRwasAreFParent}>
-            <div className={styles.realWorldAssetsRwasContainer}>
+            {/* <div className={styles.realWorldAssetsRwasContainer}>
               <span>
                 <p className={styles.realWorldAssetsRwas}>
                   Real-world assets (RWAs) are fungible or non-fungible tokens
@@ -51,7 +51,7 @@ const FooterFrame: NextPage = () => {
                   className={styles.securityTokensCan}
                 >{`Security tokens can be issued to represent real-world assets that exist and are managed off-chain by custodians, or security tokens can be issued to serve as real-world assets themselves. `}</p>
               </span>
-            </div>
+            </div> */}
             <div className={styles.exampleAssetFrame}>
               <div className={styles.forExampleAContainer}>
                 <p className={styles.forExampleA}>

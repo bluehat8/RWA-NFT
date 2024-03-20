@@ -47,7 +47,23 @@ const RWAdrops: NextPage = () => {
           <div className={styles.realworldAssetsInfo}>
             <h2 className={styles.whyChooseUs}>Why choose us</h2>
           </div>
-          <div className={styles.contactForm}>
+          <div className={styles.contenedor1}>
+            <div className={styles.box}>
+              <span></span>
+              <div className={styles.content}>
+                <h2>WE: </h2>
+                <p>Build RWA based financial engines and systematize them for growth</p> 
+              </div>
+            </div>
+            <div className={styles.box}>
+              <span></span>
+              <div className={styles.content}>
+                <h2>YOU: </h2>
+                <p>Hold  RWA-NFTs, get recurring income, and help bring in the metaverse of finance</p>
+              </div>
+            </div>
+          </div>
+          {/* <div className={styles.contactForm}>
             <BuildSystematizeRectangles
               wE="WE:"
               buildRWABasedFinancialEng="Build RWA based financial engines and systematize them for growth"
@@ -56,7 +72,7 @@ const RWAdrops: NextPage = () => {
               wE="YOU:"
               buildRWABasedFinancialEng="Hold  RWA-NFTs, get recurring income, and help bring in the metaverse of finance"
             />
-          </div>
+          </div> */}
         </div>
       </section>
       <SocialMediaLinks />
