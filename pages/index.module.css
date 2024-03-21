@@ -142,6 +142,206 @@
   gap: 163px 0;
   letter-spacing: normal;
 }
+.contenedor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 35px 0;
+}
+.contenedor1 .box{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 50px;
+  transition: 0.5s;
+}
+.contenedor1 .box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background: #ffff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+  transition: 0.5s;
+}
+
+.contenedor1 .box:hover:before,
+.contenedor1 .box:hover:after {
+  transform: skewX(0deg);
+  top: 10%;
+  left: -25px;
+  width: 100%;
+  height: 80%;
+}
+
+/*gradiente 1*/
+.contenedor1 .box:nth-child(1):before,
+.contenedor1 .box:nth-child(1):after {
+  background: var(--color-yellow);
+}
+
+/*Gradiente 2*/
+.contenedor1 .box:nth-child(2):before,
+.contenedor1 .box:nth-child(2):after {
+  background: var(--color-yellow);
+}
+
+/*Gradiente 3*/
+.contenedor1 .box:nth-child(3):before,
+.contenedor1 .box:nth-child(3):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.contenedor1 .box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.contenedor1 .box span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.05);
+}
+
+.contenedor1 .box:hover span:before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+.content h2{
+  color: black;
+}
+.content p{
+  color: black;
+}
+/* 
+.testimonials .col{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.4rem;
+  padding: 18px;
+}
+
+.testimonials .col h3{
+  color: black;
+  
+}
+.testimonials .col p{
+  color: black;
+} */
+
+.contenedor1 .box span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  animation-delay: -1s;
+
+}
+
+.contenedor1 .box:hover span::after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.contenedor1 .box .content:before {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.1);
+
+  border: 2px solid rgba(92, 60, 60, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(1px);
+  z-index: 1;
+  transition: 0.5s;
+  color: #ffff;
+  background: none;
+}
+
+.contenedor1 .box .content {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: linear-gradient(111.56deg, rgba(144, 141, 147, 0.3) -2.6%, rgba(53, 83, 100, 0.225) 89.17%, rgba(53, 83, 100, 0.3) 96.27%);
+
+  border: 1px solid rgba(92, 60, 60, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(1px);
+  z-index: 1;
+  transition: 0.5s;
+  color: black;
+}
+
+.contenedor1 .box:hover .content {
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.contenedor1 .box .content h2 {
+  font-size: 1.4rem;
+  color: var(--color-gray-200);
+  margin-bottom: 10px;
+}
+
+.contenedor1 .box .content p {
+  font-size: 0.9rem;
+  color: var(--color-gray-200);
+  margin-bottom: 10px;
+  line-height: 1.4rem;
+}
+
+.contenedor1 .box .content a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+  background: black;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 5px;
+}
 @media screen and (max-width: 1275px) {
   .logoFrame {
     gap: 98px 0;

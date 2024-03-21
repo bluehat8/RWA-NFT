@@ -28,6 +28,38 @@
   font-family: var(--font-inter);
   color: var(--color-darkslategray);
 }
+.input{
+  width: 100%;
+  display: block;
+  background: #f3f3f3;
+  padding: 20px;
+  border: none;
+  margin-bottom: 15px;
+}
+.textarea{
+  resize: none;
+  height: 215 px;
+  margin-bottom: 50px;
+}
+.button{
+  height: 70px;
+  width: 50%;
+  display: block;
+  color: var(--color-dodgerblue);
+  background: var(--color-dadgerblue);
+  text-decoration: none;
+  border: 50%;
+  border-radius: 500px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.name{
+  width: 450px;
+}
+.button:hover{
+  background: var(--color-dadgerblue);
+  color: var(--color-dadgerblue);
+}
 .footerBase,
 .riskMitigation {
   display: flex;
@@ -286,13 +318,15 @@
 }
 .footer,
 .socialMediaLinks {
-  display: flex;
-  justify-content: flex-start;
+  display: inline-grid;
+  justify-content: space-around;
   box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-base);
 }
+
 .footer {
+  display: inline-flex;
   margin-left: -253px;
   width: 1926px;
   background-color: var(--color-gray-400);
@@ -335,6 +369,7 @@
     box-sizing: border-box;
   }
   .socialMediaLinks {
+    display: inline-flex;
     gap: 161px 0;
     padding-left: var(--padding-104xl);
     padding-top: var(--padding-107xl);

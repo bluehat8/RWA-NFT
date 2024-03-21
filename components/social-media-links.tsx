@@ -1,8 +1,26 @@
 import type { NextPage } from "next";
 import EmailAddress from "./email-address";
 import styles from "./social-media-links.module.css";
+import { useState } from "react";
 
 const SocialMediaLinks: NextPage = () => {
+  const [message, setMessage] = useState('')
+  const handleSubmit = async(event) =>{
+    event.preventDefoult()
+    const data = new FormData(event.target)
+    const response = await fetch(event.target.action,{
+      method: 'POST',
+      body: data,
+      headers:{
+        Accept: 'application\json'
+      }
+    })
+    const result = await Response.json()
+    if(!Response.ok){
+      setMessage(result.error.map(error => error.message).join(', '))
+      return false
+    }
+  }
   return (
     <section className={styles.socialMediaLinks}>
       <div className={styles.socialMediaLinksChild} />
@@ -22,22 +40,17 @@ const SocialMediaLinks: NextPage = () => {
                 precise as possible.
               </div>
             </div>
-            <EmailAddress name1="Name " enterYourName="Enter your name" />
-            <div className={styles.footerBase}>
-              <EmailAddress
-                name1="Email address "
-                enterYourName="Enter your email address"
-                propHeight="unset"
-              />
-              <EmailAddress
-                name1="Message "
-                enterYourName="Your message here"
-                propHeight="127px"
-              />
-            </div>
-            <div className={styles.vectorXInstagram}>
-              <b className={styles.submit}>Submit</b>
-            </div>
+            
+            <form action="https://formspree.io/f/mlevjnkn" method="POST" onSubmit={handleSubmit}>
+              <label className="name">Name</label>
+              <input placeholder="Your Name" type="text" id="name" name="name" className={styles.input}/>
+              <label className="Email">Email address</label>
+              <input placeholder="Your E-mail" type="email" id="email" name="email" className={styles.input}/>
+              <label className="Message">Message</label>
+              <textarea placeholder="Your Message" type="text" id="Message" name="Message" className={`${styles.input} ${styles.textarea}`} />
+              <button className={styles.button}>Submit</button>
+            </form>
+            
           </div>
         </div>
       </div>
