@@ -8,15 +8,6 @@ const GroupComponent: NextPage = () => {
     <>
       <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${styles.poppinsFont}`} style= {{ backdropFilter: "blur(10px)", backgroundColor: "rgba(255, 330, 255, 0.8)"}}>
         <div className="container">
-          {/* <a className="navbar-brand fw-bold" href="#">
-            <img
-              className={styles.logo1Icon}
-              loading="lazy"
-              alt=""
-              src="/LogoRWA.svg"
-            />
-            RWAdrops
-          </a> */}
 
           <a className="navbar-brand d-flex align-items-center fw-bold" href="#">
             <img

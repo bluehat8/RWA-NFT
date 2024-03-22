@@ -6,6 +6,7 @@ import BuildSystematizeRectangles from "../components/build-systematize-rectangl
 import SocialMediaLinks from "../components/social-media-links";
 import styles from "./index.module.css";
 import Footer from "../components/footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const RWAdrops: NextPage = () => {
@@ -22,7 +23,7 @@ const RWAdrops: NextPage = () => {
         </div>
       </section>
       <FooterFrame />
-      <section className={styles.riskMitigationRectangle}>
+      {/* <section className={styles.riskMitigationRectangle}>
         <div className={styles.mitigateRisksToSecurityAndWrapper}>
           <h1 className={styles.mitigateRisksToContainer}>
             <span>
@@ -41,11 +42,39 @@ const RWAdrops: NextPage = () => {
           alt=""
           src="/rectangle-63@2x.png"
         />
-      </section>
+      </section> */}
+
+<section className={styles.riskMitigationRectangle}>
+<div className="row">
+  <div className="col-12 col-md-6">
+    <div className={styles.mitigateRisksToSecurityAndWrapper}>
+    <h1 className={styles.mitigateRisksToContainer}>
+            <span>
+              <span className={styles.m}>m</span>
+            </span>
+            <span className={styles.itigateRisksToSecurityAnd}>
+              <span>{`itigate risks to security and compliance with `}</span>
+              <span className={styles.rwadrops1}>RWAdrops</span>
+              <span>, the blockchain purpose-built for real-world assets</span>
+            </span>
+          </h1>
+    </div>
+  </div>
+  <div className="col-12 col-md-6">
+    <img 
+    className={`${styles.whyChooseUsFrame} w-100`}
+    src="/rectangle-63@2x.png"
+    />
+  </div>
+</div>
+
+</section>
       <section className={styles.footerFrame}>
         <div className={styles.realworldAssetsInfoParent}>
           <div className={styles.realworldAssetsInfo}>
-            <h2 className={styles.whyChooseUs}>Why choose us</h2>
+            <h2 className={styles.whyChooseUs}>Why choose us
+            <div className={styles.line}></div>
+            </h2>
           </div>
           <div className={styles.contenedor1}>
             <div className={styles.box}>
@@ -76,8 +105,10 @@ const RWAdrops: NextPage = () => {
         </div>
       </section>
       <SocialMediaLinks />
-      <Footer/>
     </div>
+
+    <Footer/>
+
     </>
   );
 };

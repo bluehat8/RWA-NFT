@@ -38,18 +38,17 @@
   margin: 0;
   align-self: stretch;
   position: relative;
-  font-size: inherit;
+  font-size: 1.8rem;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: inherit;
 }
 .mitigateRisksToSecurityAndWrapper {
-  width: 785px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 95.5px 0 0;
+  padding: 100.5px 0px 20px;
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -64,7 +63,9 @@
   margin-right: -6px;
   margin-bottom: 10px;
   align-self: stretch;
-  background-color: var(--color-lavender-100);
+  /* background-color: var(--color-lavender-100); */
+  /* background: linear-gradient(to right, #FFD700, #FFA500) !important; */
+  background: linear-gradient(90deg, #FFD785 0%, #FFF1B6 100%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -89,6 +90,15 @@
   font-family: inherit;
   display: inline-block;
 }
+
+.line {
+  display: block;
+  width: 35%;
+  height: 5px;
+  background: var(--color-dodgerblue);
+  margin: 10px auto;
+}
+
 .contactForm,
 .realworldAssetsInfo {
   align-self: stretch;
@@ -121,13 +131,13 @@
   justify-content: flex-start;
 }
 .footerFrame {
-  width: 1534px;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0 0 200.5999999999999px var(--padding-xl);
-  box-sizing: border-box;
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+  width: 100%;
+  padding: 20px;
   font-size: var(--font-size-11xl);
   color: var(--color-dodgerblue);
   font-family: var(--font-poppins);
@@ -139,7 +149,7 @@
   overflow: hidden;
   flex-direction: column;
   align-items: flex-end;
-  gap: 163px 0;
+  gap: 143px 0;
   letter-spacing: normal;
 }
 .contenedor1{
@@ -147,7 +157,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 35px 0;
+  width: 100%;
+  padding: 10px 0px 10px 15px;
 }
 .contenedor1 .box{
   position: relative;
@@ -370,11 +381,16 @@
     box-sizing: border-box;
   }
   .mitigateRisksToContainer {
-    font-size: var(--font-size-10xl);
+    font-size: 1.5rem;
     line-height: 32px;
+    text-align: center;
+  }
+
+ .mitigateRisksToSecurityAndWrapper{
+  padding: 70.5px 20px 20px;
   }
   .riskMitigationRectangle {
-    padding-left: var(--padding-3xl);
+    padding-left: 0px;
     box-sizing: border-box;
   }
   .whyChooseUs {

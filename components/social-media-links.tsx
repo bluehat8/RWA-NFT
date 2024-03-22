@@ -41,7 +41,7 @@ const SocialMediaLinks: NextPage = () => {
               </div>
             </div>
             
-            <form action="https://formspree.io/f/mlevjnkn" method="POST" onSubmit={handleSubmit}>
+            <form action="https://formspree.io/f/mlevjnkn" className="w-100" method="POST" onSubmit={handleSubmit}>
               <label className="name">Name</label>
               <input placeholder="Your Name" type="text" id="name" name="name" className={styles.input}/>
               <label className="Email">Email address</label>

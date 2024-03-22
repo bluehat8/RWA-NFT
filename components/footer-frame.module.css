@@ -1,3 +1,11 @@
+.container{
+  margin-top: 50px;
+}
+
+.customWidth85 {
+  width: 95%;
+}
+
 .rwas {
   color: var(--color-tomato-200);
 }
@@ -5,8 +13,9 @@
   margin: 0;
   align-self: stretch;
   position: relative;
-  font-size: inherit;
+  font-size: var(--font-size-10xl);
   line-height: 40px;
+  text-align: center;
   text-transform: capitalize;
   font-weight: 900;
   font-family: inherit;
@@ -209,8 +218,8 @@
   justify-content: center;
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
-  text-align: center;
-  font-size: var(--font-size-17xl);
+
+  /* font-size: var(--font-size-17xl); */
   color: var(--color-gray-100);
   font-family: var(--font-poppins);
 }

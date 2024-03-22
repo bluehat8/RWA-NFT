@@ -1,14 +1,13 @@
 .socialMediaLinksChild {
-  width: 1926px;
-  height: 1490px;
+
   position: relative;
   background-color: var(--color-lavender-200);
   display: none;
   max-width: 100%;
 }
 .helpCenterFrameChild {
-  height: 683.2px;
-  width: 600px;
+  height:45rem;
+  width: 45rem;
   position: relative;
   max-width: 100%;
   z-index: 1;
@@ -29,7 +28,7 @@
   color: var(--color-darkslategray);
 }
 .input{
-  width: 100%;
+  width: 100% !important;
   display: block;
   background: #f3f3f3;
   padding: 20px;
@@ -45,10 +44,10 @@
   height: 70px;
   width: 50%;
   display: block;
-  color: var(--color-dodgerblue);
-  background: var(--color-dadgerblue);
+  color: var(--color-white);
+  background: #5380EA; 
   text-decoration: none;
-  border: 50%;
+  border: none;
   border-radius: 500px;
   cursor: pointer;
   transition: all ease 0.5s;
@@ -57,8 +56,9 @@
   width: 450px;
 }
 .button:hover{
-  background: var(--color-dadgerblue);
-  color: var(--color-dadgerblue);
+  /* background: var(--color-dadgerblue); */
+  /* color: var(--color-dadgerblue); */
+  box-shadow: 0px 0px 10px #5380EA;
 }
 .footerBase,
 .riskMitigation {
@@ -345,9 +345,8 @@
   background-color: var(--color-lavender-200);
   flex-direction: column;
   align-items: flex-start;
-  padding: var(--padding-175xl) 0 0 var(--padding-228xl);
-  gap: 322.8px 0;
   max-width: 100%;
+  padding: 100px 0px 100px 2dvh;
   color: var(--color-dodgerblue);
   font-family: var(--font-inter);
 }
@@ -355,6 +354,12 @@
   .contactUsFrame,
   .helpCenterFrameChild {
     flex: 1;
+  }
+ 
+  .helpCenterFrameChild{
+    height: 35rem;
+
+    margin-bottom: 20px;
   }
   .footer,
   .helpCenterFrame {
@@ -371,14 +376,24 @@
   .socialMediaLinks {
     display: inline-flex;
     gap: 161px 0;
-    padding-left: var(--padding-104xl);
+    /* padding-left: var(--padding-104xl); */
     padding-top: var(--padding-107xl);
     box-sizing: border-box;
+  }
+
+  .helpCenterFrameChild{
+    height: 30rem;
+    top: 0;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 825px) {
   .contactUs {
     font-size: var(--font-size-10xl);
+  }
+  .helpCenterFrameChild{
+    height: 20rem;
+    margin-bottom: 20px;
   }
   .submitButton {
     gap: 24px 0;
@@ -397,7 +412,7 @@
   }
   .socialMediaLinks {
     gap: 81px 0;
-    padding-left: var(--padding-42xl);
+    /* padding-left: var(--padding-42xl); */
     padding-top: var(--padding-63xl);
     box-sizing: border-box;
   }
